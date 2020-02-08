@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@material-ui/core": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.41"
+  },
+  "scripts": {
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
