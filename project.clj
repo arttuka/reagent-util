@@ -5,6 +5,6 @@
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/clojurescript "1.10.597"]
                  [reagent "0.10.0"]
-                 [arttuka/reagent-material-ui "4.9.5-1"]]
-  :plugins [[lein-cljfmt "0.6.6"]]
+                 [arttuka/reagent-material-ui "4.9.7-0"]]
+  :plugins [[lein-cljfmt "0.6.7"]]
   :source-paths ["src/cljs"])

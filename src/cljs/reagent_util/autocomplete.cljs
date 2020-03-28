@@ -10,7 +10,7 @@
             [reagent-material-ui.core.text-field :refer [text-field]]
             [reagent-material-ui.core.typography :refer [typography]]
             [reagent-material-ui.util :refer [adapt-react-class js->clj' use-ref use-state]]
-            [reagent-util.material-ui-lab.use-autocomplete :refer [use-autocomplete]]
+            [reagent-util.use-autocomplete :refer [use-autocomplete]]
             [reagent-util.util :refer [wrap-on-change]]))
 
 (defn input [{:keys [input-props] :as props}]

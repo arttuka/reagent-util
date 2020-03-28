@@ -1,14 +1,14 @@
-(ns reagent-util.material-ui-lab.use-autocomplete
+(ns reagent-util.use-autocomplete
   "Imports @material-ui/lab/use-autocomplete.
    Original documentation is at https://material-ui.com/api/autocomplete/ ."
-  (:require [reagent-material-ui.util :refer [clj->js' js->clj' wrap-js-function]]
-            [material-ui-lab]))
+  (:require [reagent-material-ui.lab.use-autocomplete :refer [use-autocomplete] :rename {use-autocomplete mui-use-autocomplete}]
+            [reagent-material-ui.util :refer [clj->js' js->clj' wrap-js-function]]))
 
 (defn use-autocomplete
   "React hook that provides autocomplete functionality for advanced customization use cases.
    Note: React hooks can't be used in regular Reagent components: http://reagent-project.github.io/docs/master/ReactFeatures.html#hooks"
   [props]
-  (let [autocomplete-props (js->clj' (material-ui-lab/useAutocomplete (clj->js' props)))]
+  (let [autocomplete-props (mui-use-autocomplete props)]
     (reduce (fn [m k]
               (update m k wrap-js-function))
             autocomplete-props
