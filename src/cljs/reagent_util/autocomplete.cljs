@@ -27,7 +27,7 @@
                 filter-options shrink-label max-results]
          :or   {get-option-label identity
                 placeholder      ""}} (js->clj' params)
-        ^js/React.Ref value-ref (use-ref #js [])
+        value-ref (use-ref #js [])
         on-change (fn [_ v]
                     (on-select (js->clj' v)))
         [open set-open] (use-state false)
